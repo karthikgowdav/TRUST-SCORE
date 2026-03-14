@@ -1,16 +1,97 @@
-# React + Vite
+# TrustScore – Alternative Credit Score for the Informal Economy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+TrustScore is a FinTech platform that generates an **alternative credit score** for individuals who do not have traditional credit history.
 
-Currently, two official plugins are available:
+Instead of relying on systems like **CIBIL**, the platform analyzes **UPI transaction behavior** to evaluate financial reliability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This allows people in the **informal economy** to access micro-loans from lenders.
 
-## React Compiler
+Examples of users:
+- Street vendors
+- Gig workers
+- Freelancers
+- Small shop owners
+- Delivery partners
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Problem
+Millions of people in India cannot access bank loans because they do not have:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Credit card history
+- Previous loan records
+- Formal salary documentation
+
+Traditional credit scoring systems depend on **credit history**, which excludes many financially responsible individuals.
+
+---
+
+## Solution
+TrustScore creates a **digital financial reputation system**.
+
+The system analyzes financial behavior using signals such as:
+
+- UPI transaction history
+- Income stability
+- Spending patterns
+- Savings behavior
+- Transaction frequency
+
+From this data, the platform generates a **TrustScore (0–1000)** that represents creditworthiness.
+
+---
+
+## How It Works
+
+1. User uploads **UPI transaction CSV file**
+2. System parses the transaction data
+3. Financial behavior is analyzed
+4. A **TrustScore** is generated
+5. Dashboard displays financial insights
+6. Loan eligibility and offers are shown
+
+---
+
+## Example
+
+A chai vendor receives daily payments through UPI but has never taken a loan.
+
+**Traditional system**
+- Loan rejected
+- No credit history
+
+**TrustScore system**
+- UPI income analyzed
+- TrustScore generated
+- Loan eligibility determined
+
+---
+
+## Features
+
+- UPI transaction file upload
+- Transaction parsing
+- Financial behavior analysis
+- TrustScore generation
+- Dashboard with financial insights
+- Loan recommendation system
+
+---
+
+## Tech Stack
+
+### Frontend
+- React (Vite)
+- Recharts
+- Axios
+
+### Backend
+- Python
+- FastAPI
+
+### Database
+- SQLite
+
+
+
